@@ -34,7 +34,7 @@
 ## 🏆 Conquistas
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Lexfive&theme=tokyonight&no-frame=true"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=Lexfive&theme=darkhub&no-frame=true&margin-w=10&cache_seconds=30"/>
 </p>
 
 ---
