@@ -1,6 +1,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:6A00FF&height=140&section=header"/>
 
-<h1 align="center">👋 Yo, eu sou o Lexfive</h1>
+<h1 align="center">👋 Hey, aqui é o Lexfive</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=25&center=true&vCenter=true&width=600&lines=Dev+em+constante+evolução;Apaixonado+por+tecnologia;Sempre+aprendendo+🚀">
