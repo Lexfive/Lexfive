@@ -55,4 +55,10 @@ Construo sistemas modulares, infraestrutura confiável e ferramentas que resolve
   <img alt="Cobrinha comendo o gráfico de contribuições" src="https://raw.githubusercontent.com/Lexfive/Lexfive/output/github-snake-dark.svg" width="100%">
 </picture>
 
-<sub>Cartões gerados por GitHub Actions neste repositório (<code>scripts/</code>), sem serviços de terceiros.</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ai-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/ai-light.svg">
+  <img alt="Sessões de desenvolvimento com Claude Code, Codex e Gemini no último ano" src="assets/ai-dark.svg" width="100%">
+</picture>
+
+<sub>Muito do meu trabalho é local e em repositórios privados: o cartão acima conta minhas sessões de desenvolvimento com Claude Code, Codex e Gemini (só a contagem por dia). Cartões gerados por GitHub Actions neste repositório (<code>scripts/</code>), sem serviços de terceiros.</sub>

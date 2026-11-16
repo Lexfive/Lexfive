@@ -46,7 +46,7 @@ def card(dark):
     acc = "#e8822e"
     lv = lambda c: empty if c == 0 else [None, "#5a3311", "#8f5016", "#c26a1f", acc][min(4, 1 + c // 3)]
     W, H = 840, 222
-    stats = [(f"{total}", "contribuições no ano"), (f"{active}", "dias ativos no ano"), (f"{best}", "maior sequência"), (f"{repos['totalCount']}", "repositórios públicos")]
+    stats = [(f"{total}", "contribuições no ano"), (f"{active}", "dias ativos no ano"), (f"{best}", "maior sequência"), (f"{date.today().year - 2020}", "anos no GitHub")]
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Estatísticas de {USER}">',
          '<style>.t{font-family:"Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:Consolas,"SF Mono",Menlo,monospace}',
          '.in{opacity:0;animation:in .6s ease-out forwards}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}',
