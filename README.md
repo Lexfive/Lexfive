@@ -1,82 +1,58 @@
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img
-      src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3500&pause=900&color=C9CDD4&center=true&vCenter=true&width=540&height=42&lines=System+Architecture;DevOps+%26+Homelab;Modular+Ecosystems"
-      alt="System Architecture, DevOps & Homelab, Modular Ecosystems"
-    />
-  </a>
-</p>
-
-# Lexfive
-
-Construo sistemas modulares, infraestrutura confiável e experiências de desenvolvimento pragmáticas.
-
-## Sobre mim
-
-- Opero a **Lexfive Stack**, uma microempresa focada em produtos digitais e infraestrutura.
-- Desenvolvo e orquestro o ecossistema modular **Samantha**: Nomad, Pocket, Nixy, Khaiju e Zentrix.
-- Integro agentes e automações com **Model Context Protocol (MCP)**, **RAG** e fluxos no **n8n**.
-- Estruturo a arquitetura do **Athena Data Hub** para dados, integrações e decisões operacionais.
-- Criei o **YouSkin**, um utilitário web com foco em uma experiência direta e útil.
-- Administro Homelab com Docker, Ubuntu Server e painéis Pterodactyl.
-- Projeto redes sob CGNAT com MikroTik RouterOS e Tailscale.
-
-## Tech stack
-
-<table>
-  <tr>
-    <td valign="top">
-      <strong>Infraestrutura & Redes</strong><br><br>
-      <img src="https://img.shields.io/badge/Docker-1C1C1C?style=for-the-badge&logo=docker&logoColor=E6E6E6" alt="Docker">
-      <img src="https://img.shields.io/badge/Ubuntu-1C1C1C?style=for-the-badge&logo=ubuntu&logoColor=E6E6E6" alt="Ubuntu">
-      <img src="https://img.shields.io/badge/MikroTik-1C1C1C?style=for-the-badge&logo=mikrotik&logoColor=E6E6E6" alt="MikroTik">
-      <img src="https://img.shields.io/badge/Tailscale-1C1C1C?style=for-the-badge&logo=tailscale&logoColor=E6E6E6" alt="Tailscale">
-      <img src="https://img.shields.io/badge/Vercel-1C1C1C?style=for-the-badge&logo=vercel&logoColor=E6E6E6" alt="Vercel">
-      <img src="https://img.shields.io/badge/Render-1C1C1C?style=for-the-badge&logo=render&logoColor=E6E6E6" alt="Render">
-    </td>
-    <td valign="top">
-      <strong>Backend & IA</strong><br><br>
-      <img src="https://img.shields.io/badge/Python-1C1C1C?style=for-the-badge&logo=python&logoColor=E6E6E6" alt="Python">
-      <img src="https://img.shields.io/badge/JavaScript-1C1C1C?style=for-the-badge&logo=javascript&logoColor=E6E6E6" alt="JavaScript">
-      <img src="https://img.shields.io/badge/n8n-1C1C1C?style=for-the-badge&logo=n8n&logoColor=E6E6E6" alt="n8n">
-      <img src="https://img.shields.io/badge/Supabase-1C1C1C?style=for-the-badge&logo=supabase&logoColor=E6E6E6" alt="Supabase">
-    </td>
-    <td valign="top">
-      <strong>Frontend</strong><br><br>
-      <img src="https://img.shields.io/badge/HTML5-1C1C1C?style=for-the-badge&logo=html5&logoColor=E6E6E6" alt="HTML5">
-      <img src="https://img.shields.io/badge/JavaScript-1C1C1C?style=for-the-badge&logo=javascript&logoColor=E6E6E6" alt="JavaScript">
-      <img src="https://img.shields.io/badge/Vercel-1C1C1C?style=for-the-badge&logo=vercel&logoColor=E6E6E6" alt="Vercel">
-    </td>
-  </tr>
-</table>
-
-## Estatísticas
+<a href="https://lexfive.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img alt="LEXFIVE — Ramires Mohamed, sites, sistemas e automações. Belo Horizonte." src="assets/banner-dark.svg" width="100%">
+  </picture>
+</a>
 
 <p>
-  <img
-    height="165"
-    src="https://github-readme-stats.vercel.app/api?username=Lexfive&show_icons=true&hide=contribs&bg_color=000000&title_color=ffffff&text_color=cccccc&icon_color=9CA3AF&hide_border=true"
-    alt="Estatísticas do GitHub de Lexfive"
-  />
+  <a href="https://lexfive.com"><img src="https://img.shields.io/badge/lexfive.com-000000?style=flat-square&logo=googlechrome&logoColor=e8822e" height="28" alt="Portfólio: lexfive.com"></a>
+  <a href="https://apps.lexfive.com"><img src="https://img.shields.io/badge/apps.lexfive.com-000000?style=flat-square&logo=windows&logoColor=e8822e" height="28" alt="Apps: apps.lexfive.com"></a>
+  <a href="https://codelincy.com"><img src="https://img.shields.io/badge/Codelincy-000000?style=flat-square&logo=github&logoColor=e8822e" height="28" alt="Equipe Codelincy"></a>
 </p>
 
-## Contribuições
+Construo sistemas modulares, infraestrutura confiável e ferramentas que resolvem problemas reais — do servidor ao pixel.
+
+- Opero a **Lexfive Stack**, focada em produtos digitais e infraestrutura.
+- Desenvolvo o ecossistema modular **Samantha** (Nomad, Pocket, Nixy, Khaiju e Zentrix) — ela também é a mascote do meu site.
+- Integro agentes e automações com **MCP**, **RAG** e fluxos no **n8n**.
+- Administro um **homelab** com Docker, Ubuntu Server e Pterodactyl, em rede sob CGNAT com MikroTik e Tailscale.
+
+## Apps
+
+| | App | O que faz |
+|---|---|---|
+| 🟢 | **[Vanta](https://apps.lexfive.com/vanta/)** | Workspace desktop para o WhatsApp Web, feito para equipes: várias contas, PIN, respostas prontas. |
+| 🟣 | **[SkärmCast](https://apps.lexfive.com/skarmcast/)** | Compartilhe a tela com áudio para várias pessoas pela internet, em salas fixas. |
+| 🔵 | **[Kaption Cleaner](https://apps.lexfive.com/kaption-cleaner/)** · [código](https://github.com/Lexfive/Kaption-Cleaner) | Diagnóstico e remoção segura do Kaption.ai no Google Chrome. |
+
+<sub>Todos para Windows, gratuitos, em <a href="https://apps.lexfive.com">apps.lexfive.com</a>.</sub>
+
+## Stack
+
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,ubuntu,linux,nginx,cloudflare&theme=dark" height="40" alt="Docker, Ubuntu, Linux, Nginx, Cloudflare">
+  &nbsp;
+  <img src="https://skillicons.dev/icons?i=python,js,ts,nodejs,supabase&theme=dark" height="40" alt="Python, JavaScript, TypeScript, Node.js, Supabase">
+  &nbsp;
+  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind,vite&theme=dark" height="40" alt="HTML, CSS, React, Next.js, Tailwind, Vite">
+</p>
+
+<sub>e também n8n, MikroTik RouterOS, Tailscale, Tauri e Rust.</sub>
+
+## Atividade
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/Lexfive/Lexfive/output/galaga-contribution-graph-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/Lexfive/Lexfive/output/galaga-contribution-graph.svg"
-  />
-  <img
-    alt="Galaga contribution graph"
-    src="https://raw.githubusercontent.com/Lexfive/Lexfive/output/galaga-contribution-graph-dark.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
+  <img alt="Estatísticas do GitHub de Lexfive: contribuições, dias ativos, maior sequência, repositórios e linguagens" src="assets/stats-dark.svg" width="100%">
 </picture>
 
-## Contato
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Lexfive/Lexfive/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Lexfive/Lexfive/output/github-snake.svg">
+  <img alt="Cobrinha comendo o gráfico de contribuições" src="https://raw.githubusercontent.com/Lexfive/Lexfive/output/github-snake-dark.svg" width="100%">
+</picture>
 
-[![Website](https://img.shields.io/badge/intelis.org.br-1C1C1C?style=for-the-badge&logo=googlechrome&logoColor=E6E6E6)](https://intelis.org.br)
+<sub>Cartões gerados por GitHub Actions neste repositório (<code>scripts/</code>), sem serviços de terceiros.</sub>
