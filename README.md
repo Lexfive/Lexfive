@@ -12,7 +12,7 @@
   <a href="https://codelincy.com"><img src="https://img.shields.io/badge/Codelincy-000000?style=flat-square&logo=github&logoColor=ff3b3b" height="28" alt="Equipe Codelincy"></a>
 </p>
 
-> **Agora:** Samantha Robotics — a câmera no braço robótico aprendendo a acompanhar objetos. · <sub>[mais em lexfive.com/#agora](https://lexfive.com/#agora)</sub>
+> **Agora:** sites com a Codelincy, sistemas em parceria com a Líder e um projeto novo de próteses com impressão 3D. · <sub>[mais em lexfive.com/#agora](https://lexfive.com/#agora)</sub>
 
 Construo sistemas modulares, infraestrutura confiável e ferramentas que resolvem problemas reais — do servidor ao pixel.
 
