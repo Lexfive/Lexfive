@@ -7,9 +7,9 @@
 </a>
 
 <p>
-  <a href="https://lexfive.com"><img src="https://img.shields.io/badge/lexfive.com-000000?style=flat-square&logo=googlechrome&logoColor=e8822e" height="28" alt="Portfólio: lexfive.com"></a>
-  <a href="https://apps.lexfive.com"><img src="https://img.shields.io/badge/apps.lexfive.com-000000?style=flat-square&logo=windows&logoColor=e8822e" height="28" alt="Apps: apps.lexfive.com"></a>
-  <a href="https://codelincy.com"><img src="https://img.shields.io/badge/Codelincy-000000?style=flat-square&logo=github&logoColor=e8822e" height="28" alt="Equipe Codelincy"></a>
+  <a href="https://lexfive.com"><img src="https://img.shields.io/badge/lexfive.com-19171b?style=flat-square&logo=googlechrome&logoColor=d29f22" height="28" alt="Portfólio: lexfive.com"></a>
+  <a href="https://apps.lexfive.com"><img src="https://img.shields.io/badge/apps.lexfive.com-19171b?style=flat-square&logo=windows&logoColor=d29f22" height="28" alt="Apps: apps.lexfive.com"></a>
+  <a href="https://codelincy.com"><img src="https://img.shields.io/badge/Codelincy-19171b?style=flat-square&logo=github&logoColor=d29f22" height="28" alt="Equipe Codelincy"></a>
 </p>
 
 > **Agora:** Samantha Robotics — a câmera no braço robótico aprendendo a acompanhar objetos. · <sub>[mais em lexfive.com/#agora](https://lexfive.com/#agora)</sub>

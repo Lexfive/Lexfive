@@ -42,9 +42,9 @@ weeks = cal["weeks"][-16:]
 active = sum(1 for d in days if d["contributionCount"])
 
 def card(dark):
-    bg, fg, dim, line, empty = ("#000000", "#f2f2f2", "#8a8a8a", "#1f1f1f", "#161616") if dark else ("#ffffff", "#111111", "#5f5f5f", "#e6e6e6", "#eeeeee")
-    acc = "#e8822e"
-    lv = lambda c: empty if c == 0 else [None, "#5a3311", "#8f5016", "#c26a1f", acc][min(4, 1 + c // 3)]
+    bg, fg, dim, line, empty = ("#19171b", "#f2f2f2", "#9a979d", "#3a383d", "#252628") if dark else ("#ffffff", "#111111", "#5f5f5f", "#e6e6e6", "#eeeeee")
+    acc = "#d29f22"
+    lv = lambda c: empty if c == 0 else [None, "#4a3a10", "#7a5f16", "#a87f1b", acc][min(4, 1 + c // 3)]
     W, H = 840, 222
     stats = [(f"{total}", "contribuições no ano"), (f"{active}", "dias ativos no ano"), (f"{best}", "maior sequência"), (f"{date.today().year - 2020}", "anos no GitHub")]
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Estatísticas de {USER}">',
@@ -52,6 +52,7 @@ def card(dark):
          '.in{opacity:0;animation:in .6s ease-out forwards}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}',
          '@media (prefers-reduced-motion:reduce){.in{animation:none;opacity:1}}</style>',
          f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="2" fill="{bg}" stroke="{line}"/>',
+         f'<rect x="1" y="1" width="{W-2}" height="2" fill="#5d0018"/><rect x="1" y="3" width="{W-2}" height="2" fill="{acc}"/>',
          f'<text x="28" y="36" class="m" font-size="12" letter-spacing="2" fill="{acc}">GITHUB · {USER.upper()}</text>']
     for i, (n, l) in enumerate(stats):
         x = 28 + i * 140
