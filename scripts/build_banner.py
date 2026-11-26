@@ -65,7 +65,8 @@ def banner(dark: bool) -> str:
 </style>
 <rect width="{W}" height="{Hh}" fill="{bg}"/>
 <rect x="0" y="{Hh-8}" width="{W}" height="4" fill="#d30000"/><rect x="0" y="{Hh-4}" width="{W}" height="4" fill="#383838"/>
-<text x="48" y="70" class="mono" font-size="15" letter-spacing="2.5" fill="{ink}">BELO HORIZONTE · DESENVOLVEDOR &amp; CRIADOR</text>
+<g transform="translate(36 26) scale(0.215)" fill="none" stroke="{fg}" stroke-width="16"><path d="M64 144V48H192V96H64M128 96L176 144"/><path d="M64 144H192L144 184L192 224H64"/><path fill="{acc}" stroke="none" d="M176 40h16v16h-16Z"/></g>
+<text x="104" y="62" class="mono" font-size="15" letter-spacing="2.5" fill="{ink}">BELO HORIZONTE · DESENVOLVEDOR &amp; CRIADOR</text>
 <text x="44" y="190" class="t" font-size="122" font-weight="800" letter-spacing="-4" fill="{dim}" fill-opacity=".22">LEXFIVE</text>
 <text x="44" y="190" class="t" font-size="122" font-weight="800" letter-spacing="-4" fill="url(#sweep)" fill-opacity=".9">LEXFIVE</text>
 <text x="48" y="238" class="t" font-size="24" font-weight="600" fill="{fg}">Ramires Mohamed — <tspan fill="{ink}">sites, sistemas e automações</tspan></text>
