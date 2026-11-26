@@ -7,6 +7,13 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+import base64 as _b64
+from pathlib import Path as _P
+# Montserrat (OFL) embutida: SVG dentro de <img> não carrega fonte externa
+_FONT = _b64.b64encode((_P(__file__).resolve().parent.parent / "assets" / "fonts" / "montserrat-latin.woff2").read_bytes()).decode()
+FONT_FACE = '@font-face{font-family:"Montserrat";src:url(data:font/woff2;base64,' + _FONT + ') format("woff2");font-weight:100 900}'
+
+
 HOME = Path.home()
 WEEKS = 52
 start = date.today() - timedelta(days=date.today().weekday() + 1 + 7 * (WEEKS - 1))  # a Sunday
@@ -46,7 +53,7 @@ def card(dark):
     lv = lambda c: empty if c == 0 else ramp[min(3, (c - 1) // 2)]
     W, H, c = 840, 236, 11
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Sessões de desenvolvimento com IA nas últimas {WEEKS} semanas">',
-         '<style>.t{font-family:"Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:Consolas,"SF Mono",Menlo,monospace}',
+         '<style>' + FONT_FACE + '.t{font-family:"Montserrat","Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:Consolas,"SF Mono",Menlo,monospace}',
          '.in{opacity:0;animation:in .5s ease-out forwards}@keyframes in{to{opacity:1}}@media (prefers-reduced-motion:reduce){.in{animation:none;opacity:1}}</style>',
          f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="2" fill="{bg}" stroke="{line}"/>',
          f'<rect x="1" y="1" width="{W-2}" height="2" fill="#d30000"/><rect x="1" y="3" width="{W-2}" height="2" fill="#383838"/>',

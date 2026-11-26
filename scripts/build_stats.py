@@ -4,6 +4,13 @@ import json, os, urllib.request
 from datetime import date, timedelta
 from pathlib import Path
 
+import base64 as _b64
+from pathlib import Path as _P
+# Montserrat (OFL) embutida: SVG dentro de <img> não carrega fonte externa
+_FONT = _b64.b64encode((_P(__file__).resolve().parent.parent / "assets" / "fonts" / "montserrat-latin.woff2").read_bytes()).decode()
+FONT_FACE = '@font-face{font-family:"Montserrat";src:url(data:font/woff2;base64,' + _FONT + ') format("woff2");font-weight:100 900}'
+
+
 USER = "Lexfive"
 Q = """query($u:String!){ user(login:$u){
   contributionsCollection{ contributionCalendar{ totalContributions weeks{ contributionDays{ date contributionCount } } } }
@@ -49,7 +56,7 @@ def card(dark):
     W, H = 840, 222
     stats = [(f"{total}", "contribuições no ano"), (f"{active}", "dias ativos no ano"), (f"{best}", "maior sequência"), (f"{date.today().year - 2020}", "anos no GitHub")]
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Estatísticas de {USER}">',
-         '<style>.t{font-family:"Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:Consolas,"SF Mono",Menlo,monospace}',
+         '<style>' + FONT_FACE + '.t{font-family:"Montserrat","Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:Consolas,"SF Mono",Menlo,monospace}',
          '.in{opacity:0;animation:in .6s ease-out forwards}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}',
          '@media (prefers-reduced-motion:reduce){.in{animation:none;opacity:1}}</style>',
          f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="2" fill="{bg}" stroke="{line}"/>',

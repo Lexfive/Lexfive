@@ -6,6 +6,13 @@ import base64, io, json, sys
 from pathlib import Path
 from PIL import Image
 
+import base64 as _b64
+from pathlib import Path as _P
+# Montserrat (OFL) embutida: SVG dentro de <img> não carrega fonte externa
+_FONT = _b64.b64encode((_P(__file__).resolve().parent.parent / "assets" / "fonts" / "montserrat-latin.woff2").read_bytes()).decode()
+FONT_FACE = '@font-face{font-family:"Montserrat";src:url(data:font/woff2;base64,' + _FONT + ') format("woff2");font-weight:100 900}'
+
+
 src = Path(sys.argv[1])
 meta = json.loads((src / "aceno_spritesheet.json").read_text())
 sheet = Image.open(src / "aceno_spritesheet.webp").convert("RGBA")
@@ -49,7 +56,8 @@ def banner(dark: bool) -> str:
   <clipPath id="cell"><rect x="{sx}" y="{sy}" width="{FW}" height="{H}"/></clipPath>
 </defs>
 <style>
-  .t {{ font-family: "Segoe UI Variable Display","Segoe UI",Helvetica,Arial,sans-serif; }}
+  {FONT_FACE}
+  .t {{ font-family: "Montserrat","Segoe UI",Helvetica,Arial,sans-serif; }}
   .mono {{ font-family: Consolas,"SF Mono",Menlo,monospace; }}
   .dot {{ animation: blink 1.6s ease-in-out infinite; }}
   @keyframes blink {{ 50% {{ opacity: .25; }} }}
@@ -58,8 +66,8 @@ def banner(dark: bool) -> str:
 <rect width="{W}" height="{Hh}" fill="{bg}"/>
 <rect x="0" y="{Hh-8}" width="{W}" height="4" fill="#d30000"/><rect x="0" y="{Hh-4}" width="{W}" height="4" fill="#383838"/>
 <text x="48" y="70" class="mono" font-size="15" letter-spacing="2.5" fill="{ink}">BELO HORIZONTE · DESENVOLVEDOR &amp; CRIADOR</text>
-<text x="44" y="190" class="t" font-size="132" font-weight="800" letter-spacing="-5" fill="none" stroke="{dim}" stroke-opacity=".55" stroke-width="1.4">LEXFIVE</text>
-<text x="44" y="190" class="t" font-size="132" font-weight="800" letter-spacing="-5" fill="url(#sweep)" fill-opacity=".9">LEXFIVE</text>
+<text x="44" y="190" class="t" font-size="122" font-weight="800" letter-spacing="-4" fill="{dim}" fill-opacity=".22">LEXFIVE</text>
+<text x="44" y="190" class="t" font-size="122" font-weight="800" letter-spacing="-4" fill="url(#sweep)" fill-opacity=".9">LEXFIVE</text>
 <text x="48" y="238" class="t" font-size="24" font-weight="600" fill="{fg}">Ramires Mohamed — <tspan fill="{ink}">sites, sistemas e automações</tspan></text>
 <circle class="dot" cx="54" cy="264" r="4" fill="#3ddc84"/>
 <text x="66" y="269" class="mono" font-size="13" fill="{dim}">lexfive.com · apps.lexfive.com</text>
