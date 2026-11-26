@@ -39,17 +39,18 @@ totals = {k: len({s for d in days for s in per[k].get(d, ())}) for k in per}
 active = sum(1 for d in days if count[d])
 
 def card(dark):
-    bg, fg, dim, line, empty = ("#19171b", "#f2f2f2", "#9a979d", "#3a383d", "#252628") if dark else ("#ffffff", "#111111", "#5f5f5f", "#e6e6e6", "#eeeeee")
-    acc = "#d29f22"
-    ramp = ["#4a3a10", "#7a5f16", "#a87f1b", acc] if dark else ["#f1dfae", "#e3c064", "#d29f22", "#8a6510"]
+    bg, fg, dim, line, empty = ("#000000", "#ffffff", "#9a9a9a", "#383838", "#1a1a1a") if dark else ("#ffffff", "#111111", "#5f5f5f", "#e6e6e6", "#eeeeee")
+    acc = "#d30000"
+    ink = "#ff4d4d" if dark else "#d30000"
+    ramp = ["#4d0000", "#850000", "#b00000", "#ff2a2a"] if dark else ["#f6b3b3", "#e86a6a", "#d30000", "#8a0000"]
     lv = lambda c: empty if c == 0 else ramp[min(3, (c - 1) // 2)]
     W, H, c = 840, 236, 11
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Sessões de desenvolvimento com IA nas últimas {WEEKS} semanas">',
          '<style>.t{font-family:"Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:Consolas,"SF Mono",Menlo,monospace}',
          '.in{opacity:0;animation:in .5s ease-out forwards}@keyframes in{to{opacity:1}}@media (prefers-reduced-motion:reduce){.in{animation:none;opacity:1}}</style>',
          f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="2" fill="{bg}" stroke="{line}"/>',
-         f'<rect x="1" y="1" width="{W-2}" height="2" fill="#5d0018"/><rect x="1" y="3" width="{W-2}" height="2" fill="{acc}"/>',
-         f'<text x="28" y="36" class="m" font-size="12" letter-spacing="2" fill="{acc}">CONSTRUINDO COM IA · NO MEU PC</text>',
+         f'<rect x="1" y="1" width="{W-2}" height="2" fill="#d30000"/><rect x="1" y="3" width="{W-2}" height="2" fill="#383838"/>',
+         f'<text x="28" y="36" class="m" font-size="12" letter-spacing="2" fill="{ink}">CONSTRUINDO COM IA · NO MEU PC</text>',
          f'<text x="{W-28}" y="36" text-anchor="end" class="m" font-size="10" fill="{dim}">últimas {WEEKS} semanas · atualizado {date.today().strftime("%d/%m/%Y")}</text>']
     stats = [(totals["claude"], "sessões · Claude Code"), (totals["codex"], "sessões · Codex"), (totals["gemini"], "sessões · Gemini"), (active, "dias ativos")]
     for i, (n, l) in enumerate(stats):
